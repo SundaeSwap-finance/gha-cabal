@@ -1,5 +1,12 @@
 name: 'Cabal'
 description: 'Execute cabal on the current project'
+inputs:
+  args:
+    description: 'arguments to pass to cabal'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}

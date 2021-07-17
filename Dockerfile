@@ -1,3 +1,3 @@
 FROM sundaeswap/plutus-dev:latest
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]

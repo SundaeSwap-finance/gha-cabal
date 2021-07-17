@@ -8,5 +8,6 @@ if [ ! -d dist-newstyle ]; then
   tar -xzvf /pkg/dist-newstyle-cache.tar.gz
 fi
 
-echo "stack test"
-cabal $*
+echo "cabal $1"
+cabal $1
+
