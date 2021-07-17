@@ -1,0 +1,5 @@
+name: 'Cabal'
+description: 'Execute cabal on the current project'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
